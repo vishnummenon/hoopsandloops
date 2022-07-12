@@ -12,7 +12,11 @@ const Contact: FC = () => {
         We are looking forward to hearing from you. Feel free to contact us if
         you have any questions!
       </p>
-      <a href="https://snipcart.com/contact-feedback">
+      <a
+        href="https://www.instagram.com/_hoops.and.loops_/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <button>Contact Us</button>
       </a>
     </div>

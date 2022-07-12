@@ -5,12 +5,15 @@ import styles from "../styles/Footer.module.scss";
 const Footer: FC = () => {
   return (
     <footer className={styles.footer}>
-      <p>
-        Next.js app with a&nbsp;<a href="https://snipcart.com">Snipcart</a>
-        &nbsp;- powered store
-      </p>
+      <p>{`made with love <3`}</p>
       <div className={styles.footer__left}>
-        <a href="https://github.com/snipcart/snipcart-nextjs">Github</a>
+        <a
+          href="https://github.com/vishnummenon/hoopsandloops.git"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Vishnu Mohan Shyla
+        </a>
       </div>
     </footer>
   );
