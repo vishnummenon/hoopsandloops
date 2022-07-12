@@ -1,14 +1,12 @@
 import Script from 'next/script';
-import ProductList from "../components/ProductList";
-import Contact from "../components/Contact";
 import Head from "next/head";
-import {IProduct} from "../components/Product";
+import { GetStaticProps } from "next";
+
 import halfmoonBettaPicture from "../public/halfmoon.jpg";
 import dragonScaleBettaPicture from "../public/dragonscale.jpg";
 import crowntailBettaPicture from "../public/crowntail.jpeg";
 import veiltailBettaPicture from "../public/veiltail.jpg";
-import {GetStaticProps} from "next";
-import Jumbotron from "../components/Jumbotron";
+import { Jumbotron, ProductList, Contact, IProduct } from "../components";
 
 interface IProductListProps {
     products: IProduct[]
@@ -18,7 +16,7 @@ export default function Home({products}: IProductListProps) {
     return (
         <>
             <Head>
-                <title>My awesome store</title>
+                <title>hoopsandloops</title>
                 <link rel="preconnect" href="https://app.snipcart.com"/>
                 <link rel="preconnect" href="https://cdn.snipcart.com"/>
                 <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css"/>

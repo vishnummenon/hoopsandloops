@@ -1,16 +1,24 @@
-import Image from 'next/image'
-import aquarium from '../public/aquarium.svg';
+import React, { FC } from "react";
+import Image from "next/image";
 
-const Jumbotron = () => {
-    return (< >
-        <div className="background-image">
-            <Image src={aquarium} alt={aquarium}/>
-        </div>
-        <div className="promotional-message">
-            <h3>REDISCOVER</h3>
-            <h2>Fishkeeping</h2>
-            <p>An <strong>exclusive collection of bettas</strong> available for everyone.</p>
-        </div>
-    </>)
-}
+import aquarium from "../public/aquarium.svg";
+
+const Jumbotron: FC = () => {
+  return (
+    <>
+      <div className="background-image">
+        <Image src={aquarium} alt={aquarium} />
+      </div>
+      <div className="promotional-message">
+        <h3>FIND WHAT</h3>
+        <h2>SPARKS JOY IN YOU</h2>
+        <p>
+          A <strong>curated collection of passion projects,</strong> something for
+          everyone.
+        </p>
+      </div>
+    </>
+  );
+};
+
 export default Jumbotron;

@@ -1,13 +1,15 @@
-import Image from 'next/image'
+import React, {FC} from 'react';
+import Image from 'next/image';
+
 import styles from '../styles/Header.module.scss';
 import logo from '../public/logo.svg'
 
-export default function Header() {
+const Header: FC = () => {
     return (
         <header className={styles.header}>
             <div className={styles.header__logo}>
                 <Image src={logo} alt="" width="38" height="38"  />
-                <h1 className={styles.header__title}>FishCastle</h1>
+                <h1 className={styles.header__title}>HoopsAndLoops</h1>
             </div>
             <a className="header__summary snipcart-checkout snipcart-summary" href="#" style={{textDecoration: "none"}}>
                 <svg width="31" height="27" viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,4 +19,6 @@ export default function Header() {
             </a>
         </header>
     )
-}
+};
+
+export default Header;

@@ -1,16 +1,20 @@
-import Product, {IProduct} from "./Product";
+import React, { FC } from "react";
+
+import Product from "./Product";
+import { IProduct } from "./types";
 
 interface IProductListProps {
-    products: IProduct[]
+  products: IProduct[];
 }
 
-const ProductList = (props: IProductListProps) => {
-    return (
-        <div className="product-list">
-            {props.products.map((product, index) => <Product product={product} key={index}/>)}
-        </div>
-    )
-}
+const ProductList: FC<IProductListProps> = (props: IProductListProps) => {
+  return (
+    <div className="product-list">
+      {props.products.map((product, index) => (
+        <Product product={product} key={index} />
+      ))}
+    </div>
+  );
+};
 
-
-export default ProductList
+export default ProductList;
