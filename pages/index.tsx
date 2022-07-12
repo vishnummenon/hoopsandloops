@@ -6,7 +6,7 @@ import halfmoonBettaPicture from "../public/halfmoon.jpg";
 import dragonScaleBettaPicture from "../public/dragonscale.jpg";
 import crowntailBettaPicture from "../public/crowntail.jpeg";
 import veiltailBettaPicture from "../public/veiltail.jpg";
-import { Jumbotron, ProductList, Contact, IProduct } from "../components";
+import { Tagline, ProductList, Contact, IProduct, Album } from "../components";
 
 interface IProductListProps {
     products: IProduct[]
@@ -19,8 +19,8 @@ export default function Home({products}: IProductListProps) {
                 <title>hoopsandloops</title>
             </Head>
             <main className="main">
-                <Jumbotron />
-                <ProductList products={products}/>
+                <Tagline />
+                <Album />
                 <Contact/>
             </main>
             <Script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"/>

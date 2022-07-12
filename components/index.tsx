@@ -1,18 +1,21 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Contact from "./Contact";
-import Jumbotron from "./Jumbotron";
+import Tagline from "./Tagline";
 import Product from "./Product";
 import ProductList from "./ProductList";
+import Album from "./Album";
+
 import { IProduct } from "./types";
 
 export {
     Header, 
     Footer, 
-    Jumbotron, 
+    Tagline, 
     Contact, 
     Product, 
-    ProductList
+    ProductList,
+    Album
 };
 
 export type {

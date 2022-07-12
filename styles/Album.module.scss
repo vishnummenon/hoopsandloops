@@ -1,0 +1,15 @@
+@use 'mixins';
+
+.album {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    
+    img {
+        border-radius: 16px;
+        width: 720px;
+        height: 480px;
+      }
+}

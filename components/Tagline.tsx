@@ -3,22 +3,19 @@ import Image from "next/image";
 
 import aquarium from "../public/aquarium.svg";
 
-const Jumbotron: FC = () => {
+const Tagline: FC = () => {
   return (
     <>
       <div className="background-image">
         <Image src={aquarium} alt={aquarium} />
       </div>
       <div className="promotional-message">
-        <h3>FIND WHAT</h3>
-        <h2>SPARKS JOY IN YOU</h2>
-        <p>
-          A <strong>curated collection of passion projects,</strong> something for
-          everyone.
-        </p>
+        <h3>
+          <i>{`"gifting is all about the memories you create"`}</i> 
+        </h3>
       </div>
     </>
   );
 };
 
-export default Jumbotron;
+export default Tagline;
