@@ -5,4 +5,12 @@ enum PassionProjectTypes {
   Stitching = "Stitching",
 }
 
+type IPreviousProjects = {
+  id: PassionProjectTypes;
+  caption: string;
+  works: StaticImageData[];
+};
+
+const previousProjects: IPreviousProjects[] = []; 
+
 export { PassionProjectTypes };

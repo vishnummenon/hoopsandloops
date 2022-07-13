@@ -17,6 +17,8 @@ export interface IProject {
 }
 
 export interface IProjectSummary {
+  title: string;
   description: string;
   detailPage: string;
+  id: PassionProjectTypes;
 }

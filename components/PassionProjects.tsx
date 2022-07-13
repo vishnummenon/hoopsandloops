@@ -34,7 +34,7 @@ const PassionProjects: FC = () => {
         thumbnail: CrochetKitten,
         description:
           "Crochet is a popular needle craft that uses a hook and yarn or thread.",
-        detailPage: "",
+        detailPage: "/Portfolio",
       },
       {
         id: PassionProjectTypes.Resin,
@@ -42,7 +42,7 @@ const PassionProjects: FC = () => {
         thumbnail: ResinClock,
         description:
           "Resin art is created when a runny chemical called epoxy resin is combined with various colour pigments and additives to produce a blend of unique patterns and textures.",
-        detailPage: "",
+        detailPage: "/Portfolio",
       },
       ,
       {
@@ -51,7 +51,7 @@ const PassionProjects: FC = () => {
         thumbnail: EmbroideryCycle,
         description:
           "Embroidery is the craft of decorating fabric or other materials using a needle to apply thread or yarn.",
-        detailPage: "",
+        detailPage: "/Portfolio",
       },
       ,
       {
@@ -60,7 +60,7 @@ const PassionProjects: FC = () => {
         thumbnail: StitchingDress,
         description:
           "In the textile arts, a stitch is a single turn or loop of thread, or yarn. Stitches are the fundamental elements of sewing, knitting, embroidery, crochet, and needle lace-making,",
-        detailPage: "",
+        detailPage: "/Portfolio",
       },
     ];
 
@@ -82,6 +82,8 @@ const PassionProjects: FC = () => {
         <ProjectSummary
           description={selectedProject?.description}
           detailPage={selectedProject?.detailPage}
+          title={selectedProject?.name}
+          id={selectedProject?.id}
         />
       </div>
     );

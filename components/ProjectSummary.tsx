@@ -6,13 +6,17 @@ import { IProjectSummary } from './types';
 
 const ProjectSummary: FC<IProjectSummary> = ({
     description,
-    detailPage
+    detailPage,
+    title,
+    id
 }: IProjectSummary) => {
     return (
-        <div className={styles.container}>
-            <p>{description}</p>
-            <Link href="/Portfolio">Hmm, interesting!</Link>
-        </div>
+      <div className={styles.container}>
+        <p>{description}</p>
+        <Link href={{pathname: detailPage, query: { title, id }}}>
+            Hmm, interesting!
+        </Link>
+      </div>
     );
 };
 

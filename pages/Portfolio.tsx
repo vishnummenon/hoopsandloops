@@ -1,29 +1,20 @@
 import React from 'react';
-import Script from "next/script";
+import { useRouter } from "next/router";
+
 import Head from "next/head";
 
-import {
-  Tagline,
-  Contact,
-  IProduct,
-  Album,
-  PassionProjects,
-} from "../components";
+const Portfolio = () => {
+  const router = useRouter();
+  const {title} = router?.query;
 
-interface IProductListProps {
-  products: IProduct[];
-}
-
-export default function Home({ products }: IProductListProps) {
   return (
-    <>
+    <React.Fragment>
       <Head>
-        <title>hoopsandloops</title>
+        <title>Portfolio</title>
       </Head>
-      <main className="main">
-        Portfolio
-        <Contact />
-      </main>
-    </>
+      <div className="main">{title}</div>
+    </React.Fragment>
   );
-}
+};
+
+export default Portfolio;
