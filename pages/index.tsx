@@ -6,7 +6,7 @@ import halfmoonBettaPicture from "../public/halfmoon.jpg";
 import dragonScaleBettaPicture from "../public/dragonscale.jpg";
 import crowntailBettaPicture from "../public/crowntail.jpeg";
 import veiltailBettaPicture from "../public/veiltail.jpg";
-import { Tagline, ProductList, Contact, IProduct, Album } from "../components";
+import { Tagline, Contact, IProduct, Album, PassionProjects } from "../components";
 
 interface IProductListProps {
     products: IProduct[]
@@ -21,6 +21,7 @@ export default function Home({products}: IProductListProps) {
             <main className="main">
                 <Tagline />
                 <Album />
+                <PassionProjects />
                 <Contact/>
             </main>
             <Script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"/>

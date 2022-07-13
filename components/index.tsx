@@ -5,6 +5,7 @@ import Tagline from "./Tagline";
 import Product from "./Product";
 import ProductList from "./ProductList";
 import Album from "./Album";
+import PassionProjects from "./PassionProjects";
 
 import { IProduct } from "./types";
 
@@ -15,7 +16,8 @@ export {
     Contact, 
     Product, 
     ProductList,
-    Album
+    Album,
+    PassionProjects
 };
 
 export type {

@@ -6,3 +6,8 @@ export interface IProduct {
   description: string;
   image: StaticImageData;
 }
+export interface IProject {
+  id: string;
+  name: string;
+  thumbnail: StaticImageData;
+}
