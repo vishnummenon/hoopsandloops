@@ -11,6 +11,11 @@
         height: 80px;
       }
 
+    img:hover {
+        transform: scale(1.25);
+        opacity: 50%;
+    }
+
     .imageContainer {
         display: flex;
         flex-direction: row;
